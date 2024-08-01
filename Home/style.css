@@ -7,12 +7,20 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-a {
+main {
+    height: 88vh;
+    background-color: #20272f;
+    /* color: white; */
+}
+
+/* Inicio Navbar */
+
+.linkNavBar {
     color: #fff;
     text-decoration: none;
 }
 
-a:hover{
+.linkNavBar:hover{
     opacity: 0.7;
 }
 
@@ -27,12 +35,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     background: #23232e;
-    height: 8vh;
+    height: 12vh;
 }
 
-main {
-    height: 92vh;
-}
 
 .nav-links{
     list-style: none;
@@ -66,7 +71,7 @@ main {
 
     .nav-links{
         position: absolute;
-        top: 8vh;
+        top: 12vh;
         right: 0;
         width: 50vw;
         height: 92vh;
@@ -111,3 +116,93 @@ main {
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
+/* Fim style Navbar */
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 92vh;
+    color: white;
+    background-color: #20272f;
+}
+
+article header {
+    padding-left: 75px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img {
+    width: 50%;
+    height: 100%;
+    margin-top: 30px;
+    background: url('img/Frame 2.png') no-repeat;
+    background-size: 400px;
+    box-shadow: #00c094;
+}
+
+/* .imgBanner {
+    height: 90vh;
+} */
+
+article  header h1 {
+    width: 60%;
+    font-size: 25px;
+}
+
+article  header h1 span {
+    color: #00c094;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article  header h2 {
+    margin-top: 5px;
+    margin-bottom: 5pxpx;
+}
+
+article  header p {
+    font-size: 18px;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.teste {
+    height: 800px;
+    background-color: #7a7d82;
+    
+}
+
+.botao {
+    margin: 30px;
+    display: inline-block; /* Necessário para aplicar padding e outros estilos de botão */
+    padding: 10px 20px; /* Aumenta o tamanho do botão */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Opcional, para um texto mais destacado */
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto */
+    background-color: #00c094; /* Cor de fundo */
+    border: none; /* Remove bordas padrão */
+    border-radius: 4px; /* Arredonda ligeiramente os cantos */
+    transition: background-color 0.3s, transform 0.3s; /* Suaviza transições */
+    box-shadow: 0 2px 4px #015947; /* Adiciona uma sombra leve */
+}
+
+.botao:hover {
+    background-color: #2fac93; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.botao:active {
+    background-color: #015947; /* Cor de fundo ao clicar */
+    transform: translateY(0); /* Restaura a posição ao clicar */
+}
+
+

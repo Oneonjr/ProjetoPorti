@@ -17,6 +17,7 @@ class MobileNavbar {
     }
 
     handleClick() {
+        console.log('ok')
         this.navList.classList.toggle(this.activeClass); // Adiciona a classe active na lista de navegação
         this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
