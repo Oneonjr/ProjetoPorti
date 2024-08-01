@@ -7,10 +7,25 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body header{
+    height: 12vh;
+}
+
+.fixando-header {
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    z-index: 2;
+}
+
 main {
     height: 88vh;
     background-color: #20272f;
     /* color: white; */
+}
+
+.pl{ /*padding left*/
+    padding-left: 9%;
 }
 
 /* Inicio Navbar */
@@ -21,7 +36,7 @@ main {
 }
 
 .linkNavBar:hover{
-    opacity: 0.7;
+    color: #00c094;
 }
 
 .logo{
@@ -34,8 +49,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #23232e;
-    height: 12vh;
+    background: #20272f;
+    /* height: 12vh; */
 }
 
 
@@ -119,22 +134,21 @@ nav {
 
 /* Fim style Navbar */
 
+/* Inicio banner */
 .home {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 92vh;
+    height: 600px;
     color: white;
     background-color: #20272f;
 }
 
 article header {
-    padding-left: 75px;
     width: 60%;
-    height: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
 }
 
@@ -143,7 +157,7 @@ article header {
     height: 100%;
     margin-top: 30px;
     background: url('img/Frame 2.png') no-repeat;
-    background-size: 400px;
+    background-size: 370px;
     box-shadow: #00c094;
 }
 
@@ -156,7 +170,8 @@ article  header h1 {
     font-size: 25px;
 }
 
-article  header h1 span {
+article header span {
+    font: bold;
     color: #00c094;
     font-size: 50px;
     margin-top: 20px;
@@ -172,12 +187,6 @@ article  header p {
     font-size: 18px;
     width: 90%;
     margin-top: 30px;
-}
-
-.teste {
-    height: 800px;
-    background-color: #7a7d82;
-    
 }
 
 .botao {
@@ -205,4 +214,77 @@ article  header p {
     transform: translateY(0); /* Restaura a posição ao clicar */
 }
 
+/* Fim banner */
 
+.sobre {
+    height: 650px;
+    background-color: #54606d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Caixa-imagem {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #23232e;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Caixa-imagem::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 200%;
+    background-color: #00c094;
+
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.Caixa-imagem::after{
+    content: "";
+    position: absolute;
+    background-color: #23232e;
+    inset: 5px;
+    border-radius: inherit;
+}
+
+.Caixa-imagem .tamanhoimg {
+    position: relative;
+    z-index: 1;
+    height: 250px;
+}
+
+.conteudo-Sobre{
+    height: 65%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.conteudo-Sobre span{
+    color: #00c094;
+}
+
+.conteudo-Sobre h2 {
+    font-size: 40px;
+}
+
+.conteudo-Sobre p {
+    font-size: 20px;
+    font: 700;
+}
