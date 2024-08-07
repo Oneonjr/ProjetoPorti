@@ -325,6 +325,7 @@ article  header p {
 }
 
 .card-pai .card .content{
+    margin-top: -72%;
     padding: 20px;
     text-align: center;
     transform: translateY(100px);
@@ -345,16 +346,179 @@ article  header p {
     color: rgba(30, 224, 95, 0.5);
 }
 
-.card-pai .card:hover .content h4{
+/* .card-pai .card:hover .content h4{
     position: relative; 
     font-size: 1.8em;
     color: white;
     z-index: 1;
-}
+} */
 
 
 .card-pai .card:hover .content p{
+    position: relative; 
     font-size: 1em;
+    font-weight: 600;
     color: white;
-    font-weight: 300;
+    z-index: 1;
+}
+
+.card-pai .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background-color: #00c094;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s; /* Suaviza transições */
+    box-shadow: 0 2px 4px #015947; /* Adiciona uma sombra leve */
+}
+
+.card-pai .card .content a:hover {
+    background-color: #2fac93; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.frentecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.frentecard p{
+    margin-top: 15%;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.frentecard i{
+    font-size: 50px;
+    color: rgba(30, 224, 95, 0.5);
+}
+
+.card-pai .card:hover .frentecard {
+    opacity: 0; /* Torna invisível */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Transição suave */
+    transform: scale(0.9); /* Diminui a escala para dar um efeito */
+}
+
+.card-pai .card .frentecard {
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Define a transição padrão */
+}
+
+.projetos{
+    height: 800px;
+    background-color: #54606d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.warapper{
+    height: 750px;
+    background-color: #54606d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    color: white;
+}
+
+.card-portfolio{
+    width: 80px;
+    margin: 10px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.warapper .container .card-portfolio .row{
+    color: wheat;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card-portfolio > .row > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.warapper .container .card-portfolio .row .icon{
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.description p{
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4{
+    text-transform: uppercase;
+}
+
+input{
+display: none;
+}
+
+input:checked + label{
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1;
+    transform: translateY(0) !important;
+}
+
+.card-portfolio[for='c1']{
+    background-image: url(img/vayne-lol-project-splash-art-uhdpaper.com-4K-249-wp.thumbnail.jpg);
+}
+
+.card-portfolio[for='c2']{
+    background-image: url(img/vayne-lol-project-splash-art-uhdpaper.com-4K-249-wp.thumbnail.jpg);
+}
+
+.card-portfolio[for='c3']{
+    background-image: url(img/vayne-lol-project-splash-art-uhdpaper.com-4K-249-wp.thumbnail.jpg);
+}
+
+.card-portfolio[for='c4']{
+    background-image: url(img/vayne-lol-project-splash-art-uhdpaper.com-4K-249-wp.thumbnail.jpg);
 }

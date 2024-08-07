@@ -42,3 +42,5 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
+
+VanillaTilt.init(document.querySelectorAll(".card")); //efeito passar mouse no card
