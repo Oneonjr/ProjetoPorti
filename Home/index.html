@@ -22,8 +22,8 @@
                 <li><a class="linkNavBar" href="#">Home</a></li>
                 <li><a class="linkNavBar" href="#">About</a></li>
                 <li><a class="linkNavBar" href="#">Services</a></li>
+                <li><a class="linkNavBar" href="#">My Projects</a></li>
                 <li><a class="linkNavBar" href="#">My Skills</a></li>
-                <li><a class="linkNavBar" href="#">My Work</a></li>
                 <li><a class="linkNavBar" href="#">Contat Me</a></li>
                 <li class="logo">
                     <a class="linkNavBar" href="#"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i></a>
@@ -63,7 +63,7 @@
         </article>
 
         <article class="servicos pl">
-            <h2>Meus <span>Serviços</span></h2>
+            <h2 class="servicostitulo">Meus <span>Serviços</span></h2>
             <section class="card-pai">
                 <div class="card">
                     <div class="frentecard" >
@@ -120,7 +120,7 @@
             <h2>Meus <span>Projetos</span></h2>
             <div class="warapper">
                 <div class="container">
-                    <input type="radio" name="slide" id="c1" checked>
+                    <input type="radio" class="descriptioninput" name="slide" id="c1" checked >
                     <label for="c1" class="card-portfolio">
                         <div class="row">
                             <div class="icon">1</div>
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                     </label>
-                    <input type="radio" name="slide" id="c2" >
+                    <input type="radio" class="descriptioninput" name="slide" id="c2" >
                     <label for="c2" class="card-portfolio">
                         <div class="row">
                             <div class="icon">2</div>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                     </label>
-                    <input type="radio" name="slide" id="c3" >
+                    <input type="radio" class="descriptioninput" name="slide" id="c3" >
                     <label for="c3" class="card-portfolio">
                         <div class="row">
                             <div class="icon">3</div>
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                     </label>
-                    <input type="radio" name="slide" id="c4" >
+                    <input type="radio" class="descriptioninput" name="slide" id="c4" >
                     <label for="c4" class="card-portfolio">
                         <div class="row">
                             <div class="icon">4</div>
@@ -163,6 +163,100 @@
                 </div>
             </div>
         </article>
+
+        <article class="habilidades pl">
+            <div class="containerHab">
+                <div class="card-hab">
+                    <img src="img/jpg.jpg" alt="html&css" class="imgHab">
+                    <div class="intro">
+                        <h4 class="h4HAB">HTML & CSS</h4>
+                        <a href="#" class="botaoHAB">Ver Mais</a>
+                    </div>
+                </div>
+                <div class="card-hab">
+                    <img src="img/jpg.jpg" alt="html&css" class="imgHab">
+                    <div class="intro">
+                        <h4 class="h4HAB" >HTML & CSS</h4>
+                        <a href="#" class="botaoHAB">Ver Mais</a>
+                    </div>
+                </div>
+                <div class="card-hab">
+                    <img src="img/jpg.jpg" alt="html&css" class="imgHab">
+                    <div class="intro">
+                        <h4 class="h4HAB">HTML & CSS</h4>
+                        <a href="#" class="botaoHAB">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- <article class="Contato pl">
+            <h2>Fale <span>Comigo</span></h2>
+            <div class="divContato">
+                <div class="enderecos"></div>
+                <form class="email">
+                    <label for="">Nome Completo:</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+                    <label for="">Email</label>
+                    <input type="email" name="email" placeholder="Digite seu E-mail" id="email">
+                    <label for="">Mensagem</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite Sua mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </article> -->
+
+        <article class="Contato pl">
+            <h2>Fale <span>Comigo</span></h2>
+            <div class="divContato">
+                <section class="sectionRedes">
+                        <div class="textoChamada">
+                            <h3>Tem algum projeto ?</h3>
+                            <h4>Entre em contato comigo !</h4>
+                        </div>
+                        <ul>
+                            <li><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i> (71) 9 8481-1700</li>
+                            <li><i class="fa-brands fa-github" style="color: #FFD43B;"></i> /oneonjr</li>
+                            <li><i class="fa-brands fa-linkedin" style="color: #74C0FC;"></i> /oneonjunior</li>
+                            <li><i class="fa-solid fa-envelope" style="color: #6f91ce;"></i>oneonjunior@outlook.com</li>
+                        </ul>
+                </section>
+                <section class="box-formulario">
+                    <div class="formulario">
+                        <div class="title-form">
+                          <h1>Enviar E-mail</h1>
+                          <!-- <i class="fa-regular fa-comments"></i> -->
+                        </div>
+                        <form action="#" method="post">
+                
+                            <span>
+                                <input type="text" class="input-balao-up" id="nome" name="nome" placeholder="Nome" autocomplete="off" required=""/>
+                                <label for="nome"> <i class="fa-regular fa-user"></i> </label>
+                            </span>
+                            <span>
+                                <input type="text" class="input-balao-up" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
+                                <label for="email"> <i class="fa-regular fa-envelope"></i> </label>
+                            </span>
+                            <span>
+                                <input type="text" class="input-balao-up" id="assunto" name="assunto" placeholder="Assunto" autocomplete="off" required=""/>
+                                <label for="assunto"> <i class="fa-solid fa-info"></i> </label>
+                            </span>
+                            <span>
+                                <textarea type="text" class="textarea-balao-up" id="mensagem" name="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required=""></textarea>
+                                <label for="mensagem"> <i class="fa-regular fa-comment"></i> </label>
+                            </span>
+                            <div class="box-btn">
+                
+                                <button type="submit" class="btn-envia zoom-shadow">
+                                    <i class="fa-solid fa-share"></i> Enviar</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section><!--Box Formulario-->
+            </div>
+        </article>
+
     </main>
 </body>
 <script type="text/JavaScript" src="vanilla-tilt.min.js"></script>
