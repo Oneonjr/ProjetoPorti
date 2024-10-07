@@ -27,6 +27,7 @@ main {
 .pl{ /*padding left*/
     padding-left: 9%;
     padding-right: 9%;
+    /* width: 100vh; */
 }
 
 /* Inicio Navbar */
@@ -154,9 +155,10 @@ article header {
 }
 
 .img {
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 90%;
     margin-top: 30px;
+    margin-left: 5%;
     background: url('img/Frame 2.png') no-repeat;
     background-size: 370px;
     box-shadow: #00c094;
@@ -272,7 +274,7 @@ article  header p {
 }
 
 .conteudo-Sobre{
-    height: 50%;
+    height: 70%;
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -285,12 +287,12 @@ article  header p {
 }
 
 .conteudo-Sobre h2 {
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 5%;
 }
 
 .conteudo-Sobre p {
-    font-size: 20px;
+    font-size: 1.2rem;
     font: 700;
 }
 
@@ -322,7 +324,7 @@ article  header p {
     width: 300px;
     height: 400px;
     margin: 15px;
-    box-shadow: 20px 20px 50px rgba(30, 224, 95, 0.5);
+    box-shadow: 20px 20px 30px rgba(30, 224, 95, 0.5);
     border-radius: 15px;
     background-color: #54606d;
     overflow: hidden;
@@ -423,7 +425,68 @@ article  header p {
     transition: opacity 0.5s ease, transform 0.5s ease; /* Define a transição padrão */
 }
 
-/*Final Banner Servicos*/
+
+/*InicioTeste*/
+@media (max-width: 1340px) {
+    .card-pai {
+        flex-wrap: nowrap; /* Impede a quebra de linha dos cards */
+        overflow-x: auto; /* Adiciona rolagem horizontal */
+        scrollbar-width: thin; /* Personaliza a barra de rolagem */
+        -webkit-overflow-scrolling: touch; /* Rolagem suave em dispositivos touch */
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    .card-pai .card {
+        flex: 0 0 auto; /* Impede que os cards encolham e ajusta sua largura */
+        width: 20%;  /*Cards ocupam 80% da largura da tela */
+        height: 42%;
+        margin-right: 15px; /* Espaçamento entre os cards */
+    }
+
+    .frentecard{
+        padding-top: 110%;
+    }
+
+    .frentecard p {
+        margin-top: 17%;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    .card-pai .card:hover .content h3{
+        position: absolute;
+        top: -50px;
+        right: 30px;
+        font-size: 5em;
+        color: rgba(30, 224, 95, 0.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-pai .card {
+        width: 90%; /* Cards ocupam 90% da largura da tela */
+        margin-right: 10px; /* Espaçamento entre os cards */
+    }
+}
+
+/* Personalização da barra de rolagem para navegadores baseados em WebKit */
+.card-pai::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+}
+
+.card-pai::-webkit-scrollbar-thumb {
+    background-color: #54606d; /* Cor do "polegar" da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.card-pai::-webkit-scrollbar-track {
+    background-color: #20272f; /* Cor da trilha da barra de rolagem */
+}
+
+/*FimInicioTeste*/
+/*Fim Banner Servicos*/
 
 
 /*Inicio Banner Projetos*/
@@ -440,6 +503,7 @@ article  header p {
 
 .warapper{
     height: 750px;
+    width: 100%;
     background-color: #54606d;
     color: white;
     display: flex;
@@ -451,6 +515,7 @@ article  header p {
 
 .container {
     height: 400px;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -515,7 +580,7 @@ display: none;
 }
 
 input:checked + label{
-    width: 700px;
+    width: 100%;
 }
 
 input:checked + label .description {
@@ -647,7 +712,7 @@ input:checked + label .description {
 /*Inicio  Banner Contato*/
 
 .Contato{
-    height: 1000px;
+    height: 1200px;
     font-size: 1.5rem;
     background-color: #54606d;
     display: flex;
@@ -925,6 +990,173 @@ input:checked + label .description {
     justify-content: center;
   }
 
-  .sectionRedes li{
-    list-style-type: none
-  }
+.sectionRedes li{
+    margin: 20px;
+    list-style-type: none;
+    font-size: larger;
+}
+
+.sectionRedes li a{
+    text-decoration: none;
+}
+
+.sectionRedes li a:visited{
+    color: inherit;
+}
+
+.sectionRedes li a:active{
+    color: #2fac93;
+}
+
+.no-decor {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* @media (max-width: 1020px) and (min-width: 700px) {
+   
+} */
+
+@media (max-width: 1020px) and (min-width: 700px) {
+
+    .home {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 600px;
+        color: white;
+        background-color: #20272f;
+    }
+
+    .img {
+        width: 40%;
+        height: 50%;
+        margin-top: 30px;
+        background: url('img/Frame 2.png') no-repeat;
+        background-size: 250px;
+        box-shadow: #00c094;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card-portfolio{
+        transition: .0s cubic-bezier(.28,-0.03,0,.99)!important;
+        align-items: center!important;
+        font-size: 1.2rem;
+    }
+
+    input:checked + label {
+        width: 100%;
+    }
+
+
+    .habilidades{
+        height: 1000px;
+    }
+
+    .containerHab{
+        /* height: 500px; */
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .divContato{
+        flex-direction: column;
+    }
+
+    .Contato{
+        font-size: 1.2rem;
+    }
+
+    .sectionRedes{
+        width: 100%;
+    }
+
+    .box-formulario {
+        width: 100%;
+    }
+
+    .Caixa-imagem {
+        width: 50%;
+        height: 50%;
+    }
+  
+}
+
+@media (max-width: 699px) {
+
+    .home {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 650px;
+        color: white;
+        background-color: #20272f;
+    }
+
+    .pl {
+        padding-left: 10%;
+        padding-right: 9%;
+        /* width: 100vh; */
+    }
+
+    article header {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card-portfolio{
+        transition: .0s cubic-bezier(.28,-0.03,0,.99)!important;
+        align-items: center!important;
+        font-size: 1.2rem;
+    }
+
+    input:checked + label {
+        width: 100%;
+    }
+
+
+    .habilidades{
+        height: 1000px;
+    }
+
+    .containerHab{
+        /* height: 500px; */
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .divContato{
+        flex-direction: column;
+    }
+
+    .Contato{
+        font-size: 0.9rem;
+    }
+
+    .sectionRedes{
+        width: 100%;
+    }
+
+    .box-formulario {
+        width: 100%;
+    }
+}
