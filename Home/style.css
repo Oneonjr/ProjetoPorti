@@ -297,6 +297,25 @@ article  header p {
     font: 700;
 }
 
+.btnMaisConteudo{
+    margin-top: 20px;
+    width: 150px;
+    display: inline-block;
+    padding: 5px;
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #00c094;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px #015947;
+    flex-direction: column;
+}
+
 /*Fim Banner sobre*/
 
 
@@ -1181,8 +1200,19 @@ input:checked + label .description {
 }
 
 @media (max-width: 425px) {
+    .sobre {
+        height: 700px;
+    }
+
     .conteudo-Sobre p {
         font-size: 0.7rem;
         font: 700;
+    }
+
+    .btnMaisConteudo{
+        margin-top: 0px;
+        width: 100px;
+        font-size: 10px;
+
     }
 }
